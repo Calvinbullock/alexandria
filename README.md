@@ -1,5 +1,7 @@
 # Overview
 
+Alexandria is a file storage web app. The purpues is to learn the basics of django and get exsperiance building a backend that handals file storage.
+
 {Important!  Do not say in this section that this is college assignment.  Talk about what you are trying to accomplish as a software engineer to further your learning.}
 
 {Provide a description the web app that you wrote. Describe how to start a test server on your computer and what website to open up to see the first page of the app.}
@@ -16,9 +18,9 @@
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
+IDEs / editers: Neovim and VS code
 
-{Describe the programming language that you used and any libraries.}
+language/frameworks/libraries: HTML, CSS, python Django
 
 # Useful Websites
 
