@@ -19,6 +19,10 @@ IDEs / editers: Neovim and VS code
 
 language/frameworks/libraries: HTML, CSS, python Django
 
+To start server:
+- cd into root alexandria directory
+- rund $ python manage.py runserver
+
 # Useful Websites
 
 {Make a list of websites that you found helpful in this project}
