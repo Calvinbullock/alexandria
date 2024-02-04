@@ -1,8 +1,13 @@
 from django.db import models
-from django.core.files.base import BaseStorage
+# from django.core.files.base import BaseStorage
 import os
 # Create your models here.
 
+class File(models.Model):
+    name = models.CharField(max_length=64)
+    image = models.ImageField(upload_to='file/')
+
+"""
 class LocalStorage(BaseStorage):
     def __init__(self, location):
         self.location = location
@@ -15,3 +20,4 @@ class LocalStorage(BaseStorage):
         return open(full_path, mode)
 
     # Implement other methods like exists, delete, etc.
+"""
