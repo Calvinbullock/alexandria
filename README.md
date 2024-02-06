@@ -35,3 +35,9 @@ To start server:
 * Item 1
 * Item 2
 * Item 3
+
+# Useful commands
+
+- python3 manage.py runserver
+- python3 manage.py makemigrations
+- python3 manage.py migrate
