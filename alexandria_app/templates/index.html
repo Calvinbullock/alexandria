@@ -1,3 +1,5 @@
+{% load widget_tweaks %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,27 +14,33 @@
 
 <body>
 
-    <form action="?" method="post">
-        <input type="text" id="fname" name="fname">
-        <input type="submit" value="send">
-    </form>
-
     <head>
         <title>Hello World - First CGI Program</title>
     </head>
 
-    <body>
+    <!-- <body>
         <h2>Start Directery</h2>
         <ol>
             <li><a href="{x}">{x}</a></li>
-            <li><a href="{x}">{x}</a></li>            
+            <li><a href="{x}">{x}</a></li>
         </ol>
+        <h2>End Directery</h2> -->
 
-        <h2>End Directery</h2>
+        <form method="=POST" enctype="multipart/form-data">
+            {% csrf_token %}
 
-            {{ form }}
-            <input type="submit" name="" value="">
+            <div>
+                {form.name}
+                {% render_field form.name %}
+            </div>
 
+            <div>
+                {form.image}
+                {% render_field form.image %}
+            </div>
+
+            <input type="submit" name="submit" value="submit">
+        </form>
 
     </body>
 

@@ -10,6 +10,15 @@ def index(request):
 #    return render(request, "index.html")
 
 def serve_index(request):
+    print(f"request {request}")
+    if request.method == 'POST':
+        form = FileForm(request.post, request.FILES)
+        if form.is_valid():
+            form.save()
+        else:
+            context = {'form': form}
+            return render(request, "index.html", context)
+
     context = {'form': FileForm()}
     return render(request, "index.html", context)
 
