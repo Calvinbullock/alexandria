@@ -26,8 +26,8 @@ To start server:
 # Useful Websites
 
 {Make a list of websites that you found helpful in this project}
-* [Web Site Name](http://url.link.goes.here)
-* [Web Site Name](http://url.link.goes.here)
+* [Django file uploads documentation](https://docs.djangoproject.com/en/5.0/topics/http/file-uploads/)
+* [Django file managment](https://docs.djangoproject.com/en/5.0/topics/files/)
 
 # Future Work
 
