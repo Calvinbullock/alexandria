@@ -8,8 +8,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="styles/index.css"> -->
-    <style></style>
+    <!-- Style sheet not working with django yet -->
+    <!-- <link rel="stylesheet" href="../static/index.css"> -->
+    <style>
+        body {
+            color: #fca311;
+            background-color: #14213d;
+            /* font-size: 10rem; */
+        }
+
+        a {
+            color: #ffffff;
+            font-size: 1.5em;
+            line-height: 1.6;
+        }
+
+        a:hover {
+            color: #f8adff;
+        }
+
+        ol li {
+            list-style-type: none;
+        }
+
+        .my-form {
+            font-size: larger;
+            padding-top: 3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* horizontally centers items */
+            /* Optionally add margin: auto; for vertical centering */
+            margin: auto;
+        }
+
+        .div1 {
+            padding: 0;
+            margin: 0;
+        }
+
+        /* 
+            14213d -blue
+            fca311 -yellow
+            e5e5e5 -grey
+            ffffff -white
+        */
+    </style>
 </head>
 
 <body>
@@ -27,14 +71,14 @@
         </ol>
         <h2>End Directery</h2> -->
 
-        <form method="POST" enctype="multipart/form-data">
+        <form method="POST" enctype="multipart/form-data" class="my-form">
             {% csrf_token %}
 
             <div>
                 {% render_field form.name %}
             </div>
 
-            <div>
+            <div class="div1">
                 {% render_field form.image %}
             </div>
 
