@@ -12,7 +12,7 @@ def index(request):
 def serve_index(request):
     print(f"request {request}")
     if request.method == 'POST':
-        form = FileForm(request.post, request.FILES)
+        form = FileForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
         else:
