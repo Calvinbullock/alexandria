@@ -17,7 +17,7 @@ To start the server:
 - python3 manage.py makemigrations
 - python3 manage.py migrate
 
-[Software Demo Video]()
+[Software Demo Video](https://youtu.be/xxIkgNQq5So)
 
 # Web Pages
 
