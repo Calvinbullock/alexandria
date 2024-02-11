@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from alexandria_app.forms import FileForm
+from alexandria_app.forms import File
 
 def index(request):
     return HttpResponse("Hello, world. You're at the polls index.")
@@ -22,5 +23,7 @@ def serve_index(request):
     context = {'form': FileForm()}
     return render(request, "index.html", context)
 
-
-
+def list_files(request):
+    files = File.objects.all()
+    context = {'files':files}
+    return render(request, "list.html", context)
