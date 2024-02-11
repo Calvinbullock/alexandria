@@ -43,5 +43,6 @@ language/frameworks/libraries: HTML, CSS, python, Django.
 * set up a more production ready system: see this link for more details:
         https://docs.djangoproject.com/en/5.0/howto/static-files/#serving-files-uploaded-by-a-user-during-development
 * Better styling, all css styling is very bare bones.
+* Move css styling to its own file -- this was giveing me issue
 
 
