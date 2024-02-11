@@ -9,9 +9,6 @@ To start the server:
 - run $ python3 manage.py runserver
 - go to http://127.0.0.1:8000/alexandria_app/index/
 
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running (starting
-    the server and navigating through the web pages) and a walkthrough of the code.}
-
 # Useful commands
 - python3 manage.py runserver (start server)
 - python3 manage.py makemigrations
